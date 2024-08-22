@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-label>Novo usuário</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h3 class="ion-padding">Cadastre-se</h3>
+  <div class="ion-padding">
+  <form [formGroup]="formGroup">
+        <ion-list>
+          <ion-item>
+            <ion-label position="stacked"><b>Nome:</b></ion-label>
+            <ion-input autofocus="true" formControlName="nome" placeholder="Informe seu nome" type="text">
+            </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked">Bairro:</ion-label>
+            <ion-input  formControlName="bairro" placeholder="Informe seu bairro (opcional)" type="text">
+            </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked"><b>Cidade:</b></ion-label>
+            <ion-input  formControlName="cidade" placeholder="Informe sua cidade" type="text">
+            </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked"><b>Estado:</b></ion-label>
+            <ion-input  formControlName="estado" placeholder="Informe seu estado. ex: RJ, SP"
+              type="text">
+            </ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="stacked"><b>País:</b></ion-label>
+            <ion-input  formControlName="pais" placeholder="Informe seu país." type="text">
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked">Celular (zap):</ion-label>
+            <ion-input formControlName="celular" placeholder="Informe seu celular (opcional)" type="text">
+            </ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label position="stacked"><b>Email:</b></ion-label>
+            <ion-input formControlName="email" placeholder="Email de acesso" type="email">
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="stacked"><b>Senha:</b></ion-label>
+            <ion-input formControlName="senha" placeholder="Senha de acesso" type="password">
+            </ion-input>
+          </ion-item>
+        </ion-list>
+
+        <ion-button color="secondary" expand="block" [disabled]="!formGroup.valid" (click)="adicionar()">
+          Salvar
+        </ion-button>
+
+      </form>
+    </div>
+</ion-content>
+
+<footer-loading [loading]="loading"></footer-loading>

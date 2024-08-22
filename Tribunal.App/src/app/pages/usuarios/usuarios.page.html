@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-label>Usuários</ion-label>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+    <h1 class="ion-padding animated pulse">Cadastro de Usuários</h1>
+
+
+    <ion-segment value="all" (ionChange)="filtrarUsuario($event)">
+      <ion-segment-button value="all">
+        <ion-label>Todos</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Ativo">
+        <ion-label>Ativo</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Inativo">
+        <ion-label>Inativo</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Bloqueado">
+        <ion-label>Bloqueado</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    
+
+    <nao-ha-dados [carregando]="loading" [temDados]="usuarioCollection.length>0"></nao-ha-dados>
+    <div *ngIf="usuarioCollection.length>0">
+    <ion-card class="animated fadeIn" *ngFor="let item of usuarioCollection" >
+      
+
+      <ion-card-content>
+        <img [src]="item.foto" width="100%">
+        <h2 style="color: white"><b>{{item.nome.toUpperCase()}}</b></h2>
+
+        <p class="ion-text-wrap"> <span *ngIf="item.origem"><b>Email:</b> {{item.email}}</span></p>
+        <p class="ion-text-wrap"> <span *ngIf="item.origem"><b>Origem:</b> {{item.origem}}</span></p>
+        <p class="ion-text-wrap"> <span *ngIf="item.email"><b>Status:</b> {{item.status}}</span></p>
+        <br>
+        <!-- Poderia usar o ngclass -->
+        <ion-button expand="full" color="success" *ngIf="item.status=='Ativo'">{{item.status}}</ion-button>
+        <ion-button expand="full" color="danger" *ngIf="item.status=='Inativo'">{{item.status}}</ion-button>
+        <ion-button expand="full" color="dark" *ngIf="item.status=='Bloqueado'">{{item.status}}</ion-button>
+
+      </ion-card-content>
+    </ion-card>
+  </div>
+    
+  <!-- </div> -->
+</ion-content>
+<footer-loading [loading]="loading"></footer-loading>

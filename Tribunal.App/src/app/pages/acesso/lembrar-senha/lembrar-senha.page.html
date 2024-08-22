@@ -1,0 +1,87 @@
+<ion-content>
+  <ion-grid class="grid1">
+
+    <ion-row class="row1">
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row2">
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-slide class="tela_login">
+    <div class="contaier-login">
+      <form [formGroup]="formGroup">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h1>Lembrar Senha</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-icon name="mail" class="icon-login"></ion-icon>
+                <ion-input type="email" required placeholder="E-mail" formControlName="email" clear-input></ion-input>
+              </ion-item>
+              <br *ngIf="emailEnviado==true"/>
+              <ion-item *ngIf="emailEnviado==true">
+                <ion-icon name="key-outline" class="icon-login"></ion-icon>
+                <ion-input type="text" required placeholder="Token recebido no e-mail" formControlName="token" clear-input></ion-input>
+              </ion-item>
+              <br *ngIf="emailEnviado==true"/>
+              <ion-item *ngIf="emailEnviado==true">
+                <ion-icon name="lock-closed" class="icon-login"></ion-icon>
+                <ion-input type="password" required placeholder="Nova senha" formControlName="senha" clear-input>
+                </ion-input>
+              </ion-item>
+
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button color="secondary" fill="solid" expand="full" 
+            (click)="enviarEmail()" [disabled]="!formGroup.valid" *ngIf="emailEnviado==false">
+              Enviar
+            </ion-button>
+
+            <ion-button color="secondary" fill="solid" expand="full" (click)="alterarSenha()"
+            [disabled]="!formGroup.valid" *ngIf="emailEnviado==true">
+              Alterar Senha
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row>
+          <ion-col>
+            <ion-label (click)="openLogin()">
+              <h3>Entrar</h3>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+
+      
+      <footer-loading [loading]="loading"></footer-loading>
+
+      <!-- <ion-footer>
+        <ion-progress-bar type="indeterminate" *ngIf="loading"></ion-progress-bar>
+        <ion-toolbar>
+          <div class="ion-text-center">
+            <img src="../assets/logo.png" style="width: 32px;">
+          </div>
+        </ion-toolbar>
+      </ion-footer> -->
+    </div>
+  </ion-slide>
+  
+</ion-content>

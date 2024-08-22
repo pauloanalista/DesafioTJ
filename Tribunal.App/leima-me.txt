@@ -1,0 +1,7 @@
+//INSTALAÇÃO NVM
+https://tecadmin.net/install-nvm-macos-with-homebrew/
+
+No mac para reconhecer o nvm, node e ionic, tem que rodar a linha abaixo
+source ~/.bash_profile
+
+Ele carrega as variaveis de ambiente

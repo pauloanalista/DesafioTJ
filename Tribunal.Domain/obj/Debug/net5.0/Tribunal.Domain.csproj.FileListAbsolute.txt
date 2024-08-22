@@ -1,0 +1,14 @@
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\bin\Debug\net5.0\Tribunal.Domain.deps.json
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\bin\Debug\net5.0\Tribunal.Domain.dll
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\bin\Debug\net5.0\Tribunal.Domain.pdb
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\Tribunal.Domain.csproj.AssemblyReference.cache
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\Tribunal.Domain.Resources.MSG.resources
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\Tribunal.Domain.csproj.GenerateResource.cache
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\Tribunal.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\Tribunal.Domain.AssemblyInfoInputs.cache
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\Tribunal.Domain.AssemblyInfo.cs
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\Tribunal.Domain.csproj.CoreCompileInputs.cache
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\Tribunal.Domain.dll
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\refint\Tribunal.Domain.dll
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\Tribunal.Domain.pdb
+C:\dev\paulo\pocs\Tribunal\Tribunal.Domain\obj\Debug\net5.0\ref\Tribunal.Domain.dll

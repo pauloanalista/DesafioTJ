@@ -1,0 +1,87 @@
+<ion-content>
+
+  <ion-grid class="grid1">
+
+    <ion-row class="row1">
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="row2">
+      <ion-col>
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-slide class="tela_login">
+    
+    <div class="contaier-login animated bounceInRight">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <h1>Seja bem vindo(a)</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-icon name="mail" class="icon-login"></ion-icon>
+                <ion-input name="user" type="email" required placeholder="E-mail" [(ngModel)]="login.email" clear-input>
+                </ion-input>
+              </ion-item>
+              <br />
+              <ion-item>
+                <ion-icon name="lock-closed" class="icon-login"></ion-icon>
+                <ion-input name="password" type="password" required placeholder="Senha" [(ngModel)]="login.senha"
+                  clear-input>
+                </ion-input>
+              </ion-item>
+
+            </ion-list>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button color="dark" fill="solid" expand="full" (click)="voltar()">
+              Voltar
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button color="primary" fill="solid" expand="full" (click)="autenticar()"
+              [disabled]="login.email=='' || login.senha==''">
+              Entrar
+            </ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-label (click)="openLembrarSenha()">
+              <h3>Lembrar senha</h3>
+            </ion-label>
+          </ion-col>
+          <ion-col>
+            <ion-label (click)="openNovoUsuario()">
+              <h3>Cadastre-se</h3>
+            </ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+      <footer-loading [loading]="loading"></footer-loading>
+
+      <!-- <ion-footer>
+        <ion-progress-bar type="indeterminate" *ngIf="loading"></ion-progress-bar>
+        <ion-toolbar>
+          <div class="ion-text-center">
+            <img src="../assets/logo.png" style="width: 32px;">
+          </div>
+        </ion-toolbar>
+      </ion-footer> -->
+    </div>
+  </ion-slide>
+</ion-content>

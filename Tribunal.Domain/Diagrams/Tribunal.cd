@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tribunal.Domain.Entities.Usuario">
+    <Position X="2.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAEECAAAAAAAAAAAAAAACIAAAAAAAAAAgEAAAA=</HashCode>
+      <FileName>Entities\Usuario.cs</FileName>
+      <NewMemberFileName>Entities\Linha.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tribunal.Domain.Entities.Base.EntityBase">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Base\EntityBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tribunal.Domain.Entities.Empresa">
+    <Position X="6.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Entities\Empresa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

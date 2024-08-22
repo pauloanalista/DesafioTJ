@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\Agenda\**" />
+    <Compile Remove="Commands\Grupo\**" />
+    <Compile Remove="Commands\Linha\**" />
+    <Compile Remove="Commands\Templo\**" />
+    <Compile Remove="Commands\Testemunho\**" />
+    <Compile Remove="Commands\Usuario\**" />
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="Commands\Agenda\**" />
+    <EmbeddedResource Remove="Commands\Grupo\**" />
+    <EmbeddedResource Remove="Commands\Linha\**" />
+    <EmbeddedResource Remove="Commands\Templo\**" />
+    <EmbeddedResource Remove="Commands\Testemunho\**" />
+    <EmbeddedResource Remove="Commands\Usuario\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="Commands\Agenda\**" />
+    <None Remove="Commands\Grupo\**" />
+    <None Remove="Commands\Linha\**" />
+    <None Remove="Commands\Templo\**" />
+    <None Remove="Commands\Testemunho\**" />
+    <None Remove="Commands\Usuario\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Enums\Estrategia\EnumStatus.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Commands\Usuario\AdicionarUsuario\AdicionarUsuarioHandler.cs" />
+    <Compile Include="Commands\Usuario\AdicionarUsuario\AdicionarUsuarioNotification.cs" />
+    <Compile Include="Commands\Usuario\AdicionarUsuario\AdicionarUsuarioRequest.cs" />
+    <Compile Include="Commands\Usuario\AdicionarUsuario\Notifications\AvisarAdministradores.cs" />
+    <Compile Include="Commands\Usuario\AutenticarUsuario\AutenticarUsuarioHandler.cs" />
+    <Compile Include="Commands\Usuario\AutenticarUsuario\AutenticarUsuarioRequest.cs" />
+    <Compile Include="Commands\Usuario\AutenticarUsuario\AutenticarUsuarioResponse.cs" />
+    <Compile Include="Commands\Usuario\ListarUsuario\ListarUsuarioHandler.cs" />
+    <Compile Include="Commands\Usuario\ListarUsuario\ListarUsuarioRequest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.IQueryable.Extensions" Version="6.0.2" />
+    <PackageReference Include="Ilovecode.EFCore.RepositoryBase" Version="1.0.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="prmToolkit.EnumExtension" Version="2.0.3" />
+    <PackageReference Include="prmToolkit.NotificationPattern" Version="1.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  
+</Project>

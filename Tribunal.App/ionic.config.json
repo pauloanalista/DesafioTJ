@@ -1,0 +1,7 @@
+{
+  "name": "IPTM",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
